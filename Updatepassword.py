@@ -1,8 +1,8 @@
 import random
 import string
 
-def generate_password(length=5):
-    #length changed from 6 to 5
+def generate_password(length=9):
+    #length changed from 8 to 9
     characters = string.ascii_letters + string.digits + string.punctuation
     password = ''.join(random.choice(characters) for i in range(length))
     return password
@@ -13,4 +13,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-    
